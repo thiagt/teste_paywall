@@ -745,6 +745,9 @@
       cards.subPeriod.innerHTML = data.subPeriod_val
     },
     changeValueCards: function (listPlans, card, valoresMensal, valoresAnual){
+      if(!listPlans)
+        return
+      
       listPlans.addEventListener("change", ()=>{
         if(listPlans.value === "2"){
           this.setValuesCards(valoresAnual, card)
@@ -828,12 +831,12 @@
           subPeriod_val:'{{card2-tab1-subperiod}}'
         },
         anual: {
-		  cardLink_val: '{{card2-tab2-link}}',
-          cardPercent_val: "{{card2-tab2-discount}}",
-          cardTitle_val:'{{card2-tab2-title}}',
-          cardSubTitle_val:'{{card2-tab2-title-plus}}',
-          cardPrice_val:'{{card2-tab2-price}}',
-          subPeriod_val:'{{card2-tab2-subperiod}}'
+		  cardLink_val: '{{card2-tab1-link}}',
+          cardPercent_val: "{{card2-tab1-discount}}",
+          cardTitle_val:'{{card2-tab1-title}}',
+          cardSubTitle_val:'{{card2-tab1-title-plus}}',
+          cardPrice_val:'{{card2-tab1-price}}',
+          subPeriod_val:'{{card2-tab1-subperiod}}'
         }
       }
     },
@@ -854,11 +857,12 @@
           subPeriod_val:'{{card2-tab2-subperiod}}'
         },
         anual:{
-          cardTitle_val:'Digital Básica',
-          cardPercent_val: "",
-          cardSubTitle_val:' + Voucher 3 Meses Amazon Music Unlimited',
-          cardPrice_val:' R$1,90',
-          subPeriod_val:' Nos 3 primeiros meses **'
+		  cardLink_val: '{{card2-tab2-link}}',
+          cardPercent_val: "{{card2-tab2-discount}}",
+          cardTitle_val:'{{card2-tab2-title}}',
+          cardSubTitle_val:'{{card2-tab2-title-plus}}',
+          cardPrice_val:'{{card2-tab2-price}}',
+          subPeriod_val:'{{card2-tab2-subperiod}}'
         }
       }
     }
