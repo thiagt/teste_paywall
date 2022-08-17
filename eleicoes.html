@@ -536,9 +536,7 @@
 
           <a id="{{event-ga-card1}}" style="color: inherit; text-decoration: none;" target="_blank"
           href="{{link-offer-card1-tab1}}?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico={{link-identificador}}{{variante_teste-ab}}" aria-label="{{title-card1-tab1}}">
-            <div class="article-paywall__card-percent">
-              Melhor Valor
-              <span>42% OFF</span>
+            <div class="article-paywall__card-percent" id="paywall__card-percent_digital_one">
             </div>
             <div class="article-paywall__card offer-content-wrapper" id="card-0-0">
                 <div class="article-paywall__card--title" id="digitalCompletaCardTitle_val"></div>
@@ -561,12 +559,12 @@
                 </label>
                 <div class="article-paywall__collapsible-content">
                     <div class="article-paywall__card--more-info__divider"></div>
-                    <div class="article-paywall__card--more-info__price">{{more-info-price-card1-tab1}}</div>
-                    <div class="article-paywall__card--more-info__previous-offer">{{previous-offer-card1-tab1}}</div>
+                   <div class="article-paywall__card--more-info__price">{{card1-tab1-more-info-price}}</div>
+                    <div class="article-paywall__card--more-info__previous-offer">{{card1-tab1-previous-offer}}</div>
                     <ul class="article-paywall__card--more-info__list">
-                        <li class="article-paywall__card--more-info__list-item">{{more-info-list1-item-card1-tab1}}</li>
-                        <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list2-item-card1-tab1}}</li>
-                        <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list3-item-card1-tab1}}</li>
+                        <li class="article-paywall__card--more-info__list-item">{{card1-tab1-more-info-list1-item}}</li>
+                        <li class="article-paywall__card--more-info__list-item zephr-item2">{{card1-tab1-more-info-list2-item}}</li>
+                        <li class="article-paywall__card--more-info__list-item zephr-item2">{{card1-tab1-more-info-list3-item}}</li>
                     </ul>
                 </div>
               </div>
@@ -575,8 +573,7 @@
 
           <a id="{{event-ga-card2}}" style="color: inherit; text-decoration: none;" target="_blank"
           href="{{link-offer-card1-tab1}}?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico={{link-identificador}}{{variante_teste-ab}}" aria-label="{{title-card1-tab1}}">
-            <div class="article-paywall__card-percent">
-              <span>42% OFF</span>
+            <div class="article-paywall__card-percent" id="paywall__card-percent_digital_two">
             </div>
             <div class="article-paywall__card selectedOffer offer-content-wrapper" id="card-0-0">
                 <div class="article-paywall__card--title" id="digitalBasicaCardTitle_val"></div>
@@ -598,12 +595,12 @@
                   </label>
                   <div class="article-paywall__collapsible-content">
                     <div class="article-paywall__card--more-info__divider"></div>
-                    <div class="article-paywall__card--more-info__price">{{more-info-price-card1-tab1}}</div>
-                    <div class="article-paywall__card--more-info__previous-offer">{{previous-offer-card1-tab1}}</div>
+                   <div class="article-paywall__card--more-info__price">{{card1-tab2-more-info-price}}</div>
+                    <div class="article-paywall__card--more-info__previous-offer">{{card1-tab2-previous-offer}}</div>
                     <ul class="article-paywall__card--more-info__list">
-                        <li class="article-paywall__card--more-info__list-item">{{more-info-list1-item-card1-tab1}}</li>
-                        <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list2-item-card1-tab1}}</li>
-                        <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list3-item-card1-tab1}}</li>
+                        <li class="article-paywall__card--more-info__list-item">{{card1-tab1-more-info-list1-item}}</li>
+                        <li class="article-paywall__card--more-info__list-item zephr-item2">{{card1-tab2-more-info-list2-item}}</li>
+                        <li class="article-paywall__card--more-info__list-item zephr-item2">{{card1-tab2-more-info-list3-item}}</li>
                     </ul>
                 </div>
               </div>
@@ -616,9 +613,7 @@
 
           <a id="{{event-ga-card3}}" style="color: inherit; text-decoration: none;" target="_blank"
           href="{{link-offer-card1-tab1}}?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico={{link-identificador}}{{variante_teste-ab}}" aria-label="{{title-card1-tab1}}">
-            <div class="article-paywall__card-percent">
-              Melhor Valor
-              <span>42% OFF</span>
+            <div class="article-paywall__card-percent" id="paywall__card-percent_impresso_one">
             </div>
             <div class="article-paywall__card offer-content-wrapper" id="card-0-0">
                 <div class="article-paywall__card--title" id="impressoFdsCardTitle_val"></div>
@@ -629,10 +624,7 @@
                 </div>
                 <div class="article-paywall__card--subperiod" id="impressoFdsSubPeriod_val"></div>
                 <div style="display: flex; flex-direction: column; width: 100%;">
-                  <select class="article-paywall__list-plans" name="" id="impressoFdsListPlans">
-                    <option value="1">Plano mensal</option>
-                    <option value="2">Plano anual</option>t
-                  </select>
+					<div style="min-height: 39px; margin: 0 0 5px 0;"></div>
                   <button class="article-paywall-btn--assine">Assine Agora</button>
                 <input id="collapsible-0-1-{{blaize.customData.collapsible_id}}" class="article-paywall__toggle"
                     type="checkbox">
@@ -642,12 +634,12 @@
                 </label>
                 <div class="article-paywall__collapsible-content">
                     <div class="article-paywall__card--more-info__divider"></div>
-                    <div class="article-paywall__card--more-info__price">{{more-info-price-card1-tab1}}</div>
-                    <div class="article-paywall__card--more-info__previous-offer">{{previous-offer-card1-tab1}}</div>
+					<div class="article-paywall__card--more-info__price">{{card2-tab1-more-info-price}}</div>
+                    <div class="article-paywall__card--more-info__previous-offer">{{card2-tab1-previous-offer}}</div>
                     <ul class="article-paywall__card--more-info__list">
-                        <li class="article-paywall__card--more-info__list-item">{{more-info-list1-item-card1-tab1}}</li>
-                        <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list2-item-card1-tab1}}</li>
-                        <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list3-item-card1-tab1}}</li>
+                        <li class="article-paywall__card--more-info__list-item">{{card2-tab1-more-info-list1-item}}</li>
+                        <li class="article-paywall__card--more-info__list-item zephr-item2">{{card2-tab1-more-info-list2-item}}</li>
+                        <li class="article-paywall__card--more-info__list-item zephr-item2">{{card2-tab1-more-info-list3-item}}</li>
                     </ul>
                 </div>
               </div>
@@ -656,8 +648,7 @@
 
           <a id="{{event-ga-card3}}" style="color: inherit; text-decoration: none;" target="_blank"
           href="{{link-offer-card1-tab1}}?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico={{link-identificador}}{{variante_teste-ab}}" aria-label="{{title-card1-tab1}}">
-            <div class="article-paywall__card-percent">
-              <span>42% OFF</span>
+            <div class="article-paywall__card-percent" id="paywall__card-percent_impresso_two">
             </div>
             <div class="article-paywall__card selectedOffer offer-content-wrapper" id="card-0-0">
                 <div class="article-paywall__card--title" id="impressoTdsCardTitle_val"></div>
@@ -676,12 +667,12 @@
                   </label>
                   <div class="article-paywall__collapsible-content">
                     <div class="article-paywall__card--more-info__divider"></div>
-                    <div class="article-paywall__card--more-info__price">{{more-info-price-card1-tab1}}</div>
-                    <div class="article-paywall__card--more-info__previous-offer">{{previous-offer-card1-tab1}}</div>
+                    <div class="article-paywall__card--more-info__price">{{card2-tab2-more-info-price}}</div>
+                    <div class="article-paywall__card--more-info__previous-offer">{{card1-tab2-previous-offer}}</div>
                     <ul class="article-paywall__card--more-info__list">
-                        <li class="article-paywall__card--more-info__list-item">{{more-info-list1-item-card1-tab1}}</li>
-                        <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list2-item-card1-tab1}}</li>
-                        <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list3-item-card1-tab1}}</li>
+                        <li class="article-paywall__card--more-info__list-item">{{card1-tab1-more-info-list1-item}}</li>
+                        <li class="article-paywall__card--more-info__list-item zephr-item2">{{card1-tab2-more-info-list2-item}}</li>
+                        <li class="article-paywall__card--more-info__list-item zephr-item2">{{card1-tab2-more-info-list3-item}}</li>
                     </ul>
                 </div>
               </div>
@@ -747,6 +738,7 @@
   var methodsFunc = {
     setValuesCards: function (data, cards){
       cards.cardLink.href = data.cardLink_val
+      cards.cardPercent.innerHTML = data.cardPercent_val
       cards.cardTitle.innerHTML = data.cardTitle_val
       cards.cardSubTitle.innerHTML =data.cardSubTitle_val
       cards.cardPrice.innerHTML = data.cardPrice_val
@@ -766,47 +758,53 @@
   var digitalCards = {
     cardOne: {
       cardLink: document.getElementById("{{event-ga-card1}}"),
+      cardPercent: document.getElementById("paywall__card-percent_digital_one"),
       cardTitle: document.getElementById("digitalCompletaCardTitle_val"),
       cardSubTitle: document.getElementById("digitalCompletaCardSubTitle_val"),
       cardPrice: document.getElementById("digitalCompletaCardPrice_val"),
       subPeriod: document.getElementById("digitalCompletaSubPeriod_val"),
       values: {
         mensal:{
-          cardLink_val: '{{link-offer-card1-tab1}}',
-          cardTitle_val:' Digital Completa',
-          cardSubTitle_val:' + Voucher 3 Meses Amazon Music Unlimited',
-          cardPrice_val:' R$1,90',
-          subPeriod_val:' Nos 3 primeiros meses **'
+          cardLink_val: '{{card1-tab1-link}}',
+          cardPercent_val: "{{card1-tab1-discount}}",
+          cardTitle_val:'{{card1-tab1-title}}',
+          cardSubTitle_val:'{{card1-tab1-title-plus}}',
+          cardPrice_val:'{{card1-tab1-price}}',
+          subPeriod_val:'{{card1-tab1-subperiod}}'
         },
         anual: {
-          cardLink_val: '{{link-offer-card1-tab2}}',
-          cardTitle_val:' Digital Completa',
-          cardSubTitle_val:' + Voucher 4 Meses Amazon Music Unlimited',
-          cardPrice_val:' R$2,90',
-          subPeriod_val:' Nos 5 primeiros meses **'
+		  cardLink_val: '{{card1-tab2-link}}',
+          cardPercent_val: "{{card1-tab2-discount}}",
+          cardTitle_val:'{{card1-tab2-title}}',
+          cardSubTitle_val:'{{card1-tab2-title-plus}}',
+          cardPrice_val:'{{card1-tab2-price}}',
+          subPeriod_val:'{{card1-tab2-subperiod}}'
         }
       }
     },
     cardTwo: {
       cardLink: document.getElementById("{{event-ga-card2}}"),
+      cardPercent: document.getElementById("paywall__card-percent_digital_two"),
       cardTitle: document.getElementById("digitalBasicaCardTitle_val"),
       cardSubTitle: document.getElementById("digitalBasicaCardSubTitle_val"),
       cardPrice: document.getElementById("digitalBasicaCardPrice_val"),
       subPeriod: document.getElementById("digitalBasicaSubPeriod_val"),
       values: {
         mensal:{
-          cardLink_val: '{{link-offer-card2-tab1}}',
-          cardTitle_val:'Digital Básica',
-          cardSubTitle_val:' ',
-          cardPrice_val:' R$1,90',
-          subPeriod_val:' Nos 3 primeiros meses **'
+		  cardLink_val: '{{card1-tab3-link}}',
+          cardPercent_val: "{{card1-tab3-discount}}",
+          cardTitle_val:'{{card1-tab3-title}}',
+          cardSubTitle_val:'{{card1-tab3-title-plus}}',
+          cardPrice_val:'{{card1-tab3-price}}',
+          subPeriod_val:'{{card1-tab3-subperiod}}'
         },
         anual: {
-          cardLink_val: '{{link-offer-card2-tab2}}',
-          cardTitle_val:'Digital Básica',
-          cardSubTitle_val:' + Voucher 4 Meses Amazon Music Unlimited',
-          cardPrice_val:' R$2,90',
-          subPeriod_val:' Nos 5 primeiros meses **'
+		  cardLink_val: '{{card1-tab4-link}}',
+          cardPercent_val: "{{card1-tab4-discount}}",
+          cardTitle_val:'{{card1-tab4-title}}',
+          cardSubTitle_val:'{{card1-tab4-title-plus}}',
+          cardPrice_val:'{{card1-tab4-price}}',
+          subPeriod_val:'{{card1-tab4-subperiod}}'
         }
       }
     }
@@ -815,43 +813,49 @@
   var impressoCards = {
     cardOne: {
       cardLink: document.getElementById("{{event-ga-card3}}"),
+      cardPercent: document.getElementById("paywall__card-percent_impresso_one"),
       cardTitle: document.getElementById("impressoFdsCardTitle_val"),
       cardSubTitle: document.getElementById("impressoFdsCardSubTitle_val"),
       cardPrice: document.getElementById("impressoFdsCardPrice_val"),
       subPeriod: document.getElementById("impressoFdsSubPeriod_val"),
       values: {
         mensal:{
-          cardLink_val: '{{link-offer-card3-tab1}}',
-          cardTitle_val:'JORNAL IMPRESSO <span style="font-size: .6rem;">(finais de semana)</span>',
-          cardSubTitle_val:'+Acesso Digital Completa <br>+ 3 Meses Amazon Music Unlimited<br> + Voucher R$50,00 Submarino',
-          cardPrice_val:'R$1,90',
-          subPeriod_val:'Nos 3 primeiros meses **'
+		  cardLink_val: '{{card2-tab1-link}}',
+          cardPercent_val: "{{card2-tab1-discount}}",
+          cardTitle_val:'{{card2-tab1-title}}',
+          cardSubTitle_val:'{{card2-tab1-title-plus}}',
+          cardPrice_val:'{{card2-tab1-price}}',
+          subPeriod_val:'{{card2-tab1-subperiod}}'
         },
         anual: {
-          cardLink_val: '{{link-offer-card3-tab2}}',
-          cardTitle_val:'JORNAL IMPRESSO <span style="font-size: .6rem;">(finais de semana)</span>',
-          cardSubTitle_val:'+Acesso Digital Completa <br>+ 3 Meses Amazon Music Unlimited<br> + Voucher R$50,00 Submarino',
-          cardPrice_val:' R$2,90',
-          subPeriod_val:'Nos 3 primeiros meses **'
+		  cardLink_val: '{{card2-tab2-link}}',
+          cardPercent_val: "{{card2-tab2-discount}}",
+          cardTitle_val:'{{card2-tab2-title}}',
+          cardSubTitle_val:'{{card2-tab2-title-plus}}',
+          cardPrice_val:'{{card2-tab2-price}}',
+          subPeriod_val:'{{card2-tab2-subperiod}}'
         }
       }
     },
     cardTwo: {
       cardLink: document.getElementById("{{event-ga-card3}}"),
+      cardPercent: document.getElementById("paywall__card-percent_impresso_two"),
       cardTitle: document.getElementById("impressoTdsCardTitle_val"),
       cardSubTitle: document.getElementById("impressoTdsCardSubTitle_val"),
       cardPrice: document.getElementById("impressoTdsCardPrice_val"),
       subPeriod: document.getElementById("impressoTdsSubPeriod_val"),
       values: {
         mensal:{
-          cardLink_val: '{{link-offer-card3-tab1}}',
-          cardTitle_val:'JORNAL IMPRESSO <span style="font-size: .6rem;">(todos os dias)</span>',
-          cardSubTitle_val:'+Acesso Digital Completa <br>+ 3 Meses Amazon Music Unlimited<br> + Voucher R$50,00 Submarino',
-          cardPrice_val:'R$69,90',
-          subPeriod_val:'Nos 6 primeiros meses'
+		  cardLink_val: '{{card2-tab2-link}}',
+          cardPercent_val: "{{card2-tab2-discount}}",
+          cardTitle_val:'{{card2-tab2-title}}',
+          cardSubTitle_val:'{{card2-tab2-title-plus}}',
+          cardPrice_val:'{{card2-tab2-price}}',
+          subPeriod_val:'{{card2-tab2-subperiod}}'
         },
         anual:{
           cardTitle_val:'Digital Básica',
+          cardPercent_val: "",
           cardSubTitle_val:' + Voucher 3 Meses Amazon Music Unlimited',
           cardPrice_val:' R$1,90',
           subPeriod_val:' Nos 3 primeiros meses **'
