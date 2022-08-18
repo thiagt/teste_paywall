@@ -143,12 +143,13 @@
   .article-paywall__card-percent{
     background-color: #2575e8;
     position: absolute;
-    margin: 5px 50px;
+    margin: 0 40px;
     padding: 7px 40px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #ffffff;
     font-size: 10px;
     max-width: 70px;
+	box-shadow: 0px 0px 10px 0px rgb(25 90 183 / 27%);
   }
 
   .article-paywall__card-percent span{
@@ -157,24 +158,23 @@
 
   .article-paywall__card {
     flex: 1;
-    min-width: 265px;
-    max-width: 284px;
+    width: 280px;
     padding: 12px 16px;
     border-radius: 20px;
     color: #2575e8;
-    border: solid 2px #cccccc;
-    box-shadow: 0px 0px 16px 0px #ccc;
-    margin: 20px 20px;
+    border: solid 1px #cccccc;
+    box-shadow: 0px 0px 10px 0px #ccc;
+    margin: 10px;
   }
 
   .article-paywall__card--title {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.2;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .article-paywall__card--sub-title {
@@ -222,6 +222,7 @@
     font-size: 12px;
     line-height: 18px;
     color: #94aac7;
+	margin-bottom: 5px;
   }
 
   .article-paywall__card--more-info {
@@ -341,7 +342,6 @@
       flex-direction: row;
       align-items: center;
       justify-content: left;
-      padding: 0 0 0 150px;
       background-image: url(https://assine.estadao.com.br/mkt/img-paywall-eleicoes-2022/bg-br.png);
       background-repeat: no-repeat;
       background-size: 100% 100%;
@@ -357,7 +357,6 @@
   }
 
   .article-paywall__top-text__logo-eleicoes2022__text{
-    font-size: 16px;
     word-spacing: 5px;
     font-stretch: normal;
     font-style: normal;
@@ -366,7 +365,7 @@
     text-align: left;
     color: #fff;
     text-align: left;
-    font-size: 25px;
+    font-size: 18px;
   }
 
   .article-paywall__top-text__login{
@@ -434,7 +433,7 @@
     }
 
     .article-paywall__list-plans{
-      padding: 10px;
+      padding: 7px;
       border: solid 1px #d3d3d3;
       color: #6e7987;
       border-radius: 5px;
@@ -465,7 +464,7 @@
     }
 
     .article-paywall__card {
-      min-width: 300px;
+      min-width: 265px;
       padding: 30px 25px 10px;
       height: fit-content
     }
@@ -506,8 +505,8 @@
 <div class="article-paywall__init">
   <div id="softwall" class="article-paywall__wrapper">
     <div class="article-paywall__top-text">
-        <div class="article-paywall__top-text__logo-eleicoes2022">
-          <img width="225" src="https://assine.estadao.com.br/mkt/img-paywall-eleicoes-2022/logo-eleicoes.png" alt="logo eleições 2022" srcset="">
+        <div class="article-paywall__top-text__logo-eleicoes2022" style="margin-left: 10px;">
+          <img width="175" src="https://assine.estadao.com.br/mkt/img-paywall-eleicoes-2022/logo-eleicoes.png" alt="logo eleições 2022" srcset="">
         </div>
         <div class="article-paywall__top-subtitle">
           <div class="article-paywall__top-text__logo-eleicoes2022__text">Assine já e garanta acesso</div>
@@ -520,10 +519,10 @@
     </div>
 
     <div class="article-paywall__divider-text">
-      <span>OU</span>
+      <span>ou</span>
     </div>
 
-    <h2>Escolha o seu plano e acesse o conteúdo completo do Estadão.</h2>
+    <div style="font-size: 25px; font-weight: normal; color: #606060; margin: 0 0 30px 0;">Escolha o seu plano e acesse o conteúdo completo do Estadão.</div>
       
     <div class="article-paywall__card-selector">
       <div class="article-paywall__card-container-option selectedType" id="article-paywall__card-selector--digital-{{blaize.customData.collapsible_id}}">digital</div>
@@ -670,7 +669,7 @@
                     <div class="article-paywall__card--more-info__price">{{card2-tab2-more-info-price}}</div>
                     <div class="article-paywall__card--more-info__previous-offer">{{card2-tab2-previous-offer}}</div>
                     <ul class="article-paywall__card--more-info__list">
-                        <li class="article-paywall__card--more-info__list-item">{{card2-tab2-more-info-list1-item}}</li>
+                        <li class="article-paywall__card--more-info__list-item">{{card2-tab1-more-info-list1-item}}</li>
                         <li class="article-paywall__card--more-info__list-item zephr-item2">{{card2-tab2-more-info-list2-item}}</li>
                         <li class="article-paywall__card--more-info__list-item zephr-item2">{{card2-tab2-more-info-list3-item}}</li>
                     </ul>
