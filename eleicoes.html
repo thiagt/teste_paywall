@@ -700,14 +700,57 @@
 </div>
 <script>
 
-  if (window.dataLayerEstadao) {
-    window.dataLayerEstadao.push({
-        event: "genericEvent",
-        genericCategory: "Regwall",
-        genericAction: "show",
-        genericLabel: "paywall_fim_gratuidade",
-    });
-  }
+// Events
+if (window.dataLayerEstadao) {
+  window.dataLayerEstadao.push({
+      event: "genericEvent",
+      genericCategory: "paywall",
+      genericAction: "show",
+      genericLabel: testAb == " " ? "{{cluster}}_visualizado" : "{{cluster}}" + testAb + "_visualizado",
+  });
+}
+
+  document.addEventListener("click", function (e) {
+
+    if (e.target &&
+        e.target.parentElement.id == "{{event-ga-card1}}" ||
+        e.target.id == "{{event-ga-card1}}") {
+        if (window.dataLayerEstadao) {
+          window.dataLayerEstadao.push({
+            event: "genericEvent",
+            genericCategory: "paywall",
+            genericAction: "click",
+            genericLabel: "{{event-ga-card1}}_{{cluster}}" + testAb.trim(),
+          });
+        }
+    }
+
+    if (e.target &&
+        e.target.parentElement.id == "{{event-ga-card2}}" ||
+        e.target.id == "{{event-ga-card2}}") {
+        if (window.dataLayerEstadao) {
+          window.dataLayerEstadao.push({
+            event: "genericEvent",
+            genericCategory: "paywall",
+            genericAction: "click",
+            genericLabel: "{{event-ga-card2}}_{{cluster}}" + testAb.trim(),
+          });
+        }
+    }
+
+    if (e.target &&
+        e.target.parentElement.id == "{{event-ga-card3}}" ||
+        e.target.id == "{{event-ga-card3}}") {
+        if (window.dataLayerEstadao) {
+          window.dataLayerEstadao.push({
+            event: "genericEvent",
+            genericCategory: "paywall",
+            genericAction: "click",
+            genericLabel: "{{event-ga-card3}}_{{cluster}}" + testAb.trim(),
+          });
+        }
+    }
+  });
 
   var styles = document.getElementsByTagName("style");
   var lastStyle = styles[styles.length - 1];
