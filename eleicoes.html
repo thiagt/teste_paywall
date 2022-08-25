@@ -543,26 +543,25 @@
 
     <div style="font-size: 1.3rem; font-weight: normal; color: #606060; margin: 0 0 30px 0;">Escolha o seu plano e acesse o conteúdo completo do Estadão.</div>
       
-    <div class="article-paywall__card-selector">
-      <div class="article-paywall__card-container-option selectedType" id="article-paywall__card-selector--digital-{{blaize.customData.collapsible_id}}">digital</div>
-      <div class="article-paywall__card-container-option" id="article-paywall__card-selector--impresso-{{blaize.customData.collapsible_id}}">impresso</div>
+    <div class="article-paywall__card-selector" data-selector="selector-{{blaize.customData.collapsible_id}}">
+      <div class="article-paywall__card-container-option paywall__card-selector--digital selectedType">digital</div>
+      <div class="article-paywall__card-container-option paywall__card-selector--impresso">impresso</div>
     </div>
-
-    <div class="article-paywall__card-container">
+    <div class="article-paywall__card-container" data-selector="selector-{{blaize.customData.collapsible_id}}">
         
         <div class="article__paywall__bg-wrapper selectedOffers">
 
-          <a id="{{event-ga-card1}}" style="color: inherit; text-decoration: none;" target="_blank" aria-label="{{title-card1-tab1}}">
+          <a id="{{event-ga-card1}}" class="{{event-ga-card1}}" style="color: inherit; text-decoration: none;" target="_blank" aria-label="{{title-card1-tab1}}">
             <div class="article-paywall__card offer-content-wrapper" id="card-0-0">
-              <div class="article-paywall__card-percent" id="paywall__card-percent_digital_one"></div>
-                <div class="article-paywall__card--title" id="digitalCompletaCardTitle_val"></div>
-                <div class="article-paywall__card--sub-title" id="digitalCompletaCardSubTitle_val"></div>
+              <div class="article-paywall__card-percent paywall__card-percent_digital_one"></div>
+                <div class="article-paywall__card--title digitalCompletaCardTitle_val"></div>
+                <div class="article-paywall__card--sub-title digitalCompletaCardSubTitle_val"></div>
                 <div class="article-paywall__card--price">
-                  <div class="article-paywall__card--price-value"><span style="font-size: 15px; color: #69a6ff; font-weight: 400;">Por</span> <span id="digitalCompletaCardPrice_val"></span><span style="font-size: 15px; color: #69a6ff; font-weight: 400;"> / mês</span></div>
+                  <div class="article-paywall__card--price-value"><span style="font-size: 15px; color: #69a6ff; font-weight: 400;">Por</span> <span class="digitalCompletaCardPrice_val"></span><span style="font-size: 15px; color: #69a6ff; font-weight: 400;" class="card1-price-period"></span></div>
                 </div>
-                <div class="article-paywall__card--subperiod" id="digitalCompletaSubPeriod_val"></div>
+                <div class="article-paywall__card--subperiod digitalCompletaSubPeriod_val"></div>
                 <div style="display: flex; flex-direction: column; width: 100%;">
-                  <select class="article-paywall__list-plans" name="" id="digitalCompletaListPlans">
+                  <select class="article-paywall__list-plans digitalCompletaListPlans">
                     <option value="1">Plano mensal</option>
                     <option value="2">Plano anual</option>t
                   </select>
@@ -575,29 +574,29 @@
                 </label>
                 <div class="article-paywall__collapsible-content">
                     <div class="article-paywall__card--more-info__divider"></div>
-                    <div class="article-paywall__card--more-info__price" id="card1-more-info-price"></div>
-                    <div class="article-paywall__card--more-info__previous-offer" id="card1-previous-offer"></div>
+                    <div class="article-paywall__card--more-info__price card1-more-info-price"></div>
+                    <div class="article-paywall__card--more-info__previous-offer card1-previous-offer"></div>
                     <ul class="article-paywall__card--more-info__list">
-                        <li class="article-paywall__card--more-info__list-item" id="card1-more-info-list1-item"></li>
-                        <li class="article-paywall__card--more-info__list-item zephr-item2" id="card1-more-info-list2-item"></li>
-                        <li class="article-paywall__card--more-info__list-item zephr-item2" id="card1-more-info-list3-item"></li>
+                        <li class="article-paywall__card--more-info__list-item card1-more-info-list1-item"></li>
+                        <li class="article-paywall__card--more-info__list-item zephr-item2 card1-more-info-list2-item"></li>
+                        <li class="article-paywall__card--more-info__list-item zephr-item2 card1-more-info-list3-item"></li>
                     </ul>
                 </div>
               </div>
             </div>
           </a>
 
-          <a id="{{event-ga-card2}}" style="color: inherit; text-decoration: none;" target="_blank" aria-label="{{title-card1-tab1}}">
+          <a id="{{event-ga-card2}}" class="{{event-ga-card2}}" style="color: inherit; text-decoration: none;" target="_blank" aria-label="{{title-card1-tab1}}">
             <div class="article-paywall__card selectedOffer offer-content-wrapper" id="card-0-0">
-              <div class="article-paywall__card-percent" id="paywall__card-percent_digital_two"></div>
-                <div class="article-paywall__card--title" id="digitalBasicaCardTitle_val"></div>
-                <div class="article-paywall__card--sub-title" id="digitalBasicaCardSubTitle_val"></div>                
-                <div class="article-paywall__card--price" id="{{event-ga-card1}}">
-                  <div class="article-paywall__card--price-value"><span style="font-size: 15px; color: #69a6ff; font-weight: 400;">Por</span> <span id="digitalBasicaCardPrice_val"></span><span style="font-size: 15px; color: #69a6ff; font-weight: 400;"> / mês</span></div>
+              <div class="article-paywall__card-percent paywall__card-percent_digital_two"></div>
+                <div class="article-paywall__card--title digitalBasicaCardTitle_val"></div>
+                <div class="article-paywall__card--sub-title digitalBasicaCardSubTitle_val"></div>                
+                <div class="article-paywall__card--price {{event-ga-card1}}">
+                  <div class="article-paywall__card--price-value"><span style="font-size: 15px; color: #69a6ff; font-weight: 400;">Por</span> <span class="digitalBasicaCardPrice_val"></span><span style="font-size: 15px; color: #69a6ff; font-weight: 400;" class="card2-price-period"></span></div>
                 </div>
-                <div class="article-paywall__card--subperiod" id="digitalBasicaSubPeriod_val"></div>
+                <div class="article-paywall__card--subperiod digitalBasicaSubPeriod_val"></div>
                 <div style="display: flex; flex-direction: column; width: 100%;">
-                  <select class="article-paywall__list-plans" name="" id="digitalBasicaListPlans">
+                  <select class="article-paywall__list-plans digitalBasicaListPlans">
                     <option value="1">Plano mensal</option>
                     <option value="2">Plano anual</option>t
                   </select>
@@ -609,12 +608,12 @@
                   </label>
                   <div class="article-paywall__collapsible-content">
                     <div class="article-paywall__card--more-info__divider"></div>
-                    <div class="article-paywall__card--more-info__price" id="card2-more-info-price"></div>
-                    <div class="article-paywall__card--more-info__previous-offer" id="card2-previous-offer"></div>
+                    <div class="article-paywall__card--more-info__price card2-more-info-price"></div>
+                    <div class="article-paywall__card--more-info__previous-offer card2-previous-offer"></div>
                     <ul class="article-paywall__card--more-info__list">
-                        <li class="article-paywall__card--more-info__list-item" id="card2-more-info-list1-item"></li>
-                        <li class="article-paywall__card--more-info__list-item zephr-item2" id="card2-more-info-list2-item"></li>
-                        <li class="article-paywall__card--more-info__list-item zephr-item2" id="card2-more-info-list3-item"></li>
+                        <li class="article-paywall__card--more-info__list-item card2-more-info-list1-item"></li>
+                        <li class="article-paywall__card--more-info__list-item zephr-item2 card2-more-info-list2-item"></li>
+                        <li class="article-paywall__card--more-info__list-item zephr-item2 card2-more-info-list3-item"></li>
                     </ul>
                 </div>
               </div>
@@ -627,14 +626,14 @@
 
           <a id="{{event-ga-card3}}" class="paywall__card-link_one" style="color: inherit; text-decoration: none;" target="_blank" aria-label="{{title-card1-tab1}}">
             <div class="article-paywall__card offer-content-wrapper" id="card-0-0">
-              <div class="article-paywall__card-percent" id="paywall__card-percent_impresso_one"></div>
-                <div class="article-paywall__card--title" id="impressoFdsCardTitle_val"></div>
-                <div class="article-paywall__card--sub-title" id="impressoFdsCardSubTitle_val">
+              <div class="article-paywall__card-percent paywall__card-percent_impresso_one"></div>
+                <div class="article-paywall__card--title impressoFdsCardTitle_val"></div>
+                <div class="article-paywall__card--sub-title impressoFdsCardSubTitle_val">
                 </div>
-                <div class="article-paywall__card--price" id="{{event-ga-card1}}">
-                  <div class="article-paywall__card--price-value"><span style="font-size: 15px; color: #69a6ff; font-weight: 400;">Por</span> <span id="impressoFdsCardPrice_val"></span><span style="font-size: 15px; color: #69a6ff; font-weight: 400;"> / mês</span></div>
+                <div class="article-paywall__card--price {{event-ga-card1}}">
+                  <div class="article-paywall__card--price-value"><span style="font-size: 15px; color: #69a6ff; font-weight: 400;">Por</span> <span class="impressoFdsCardPrice_val"></span><span style="font-size: 15px; color: #69a6ff; font-weight: 400;" class="card3-price-period"></span></div>
                 </div>
-                <div class="article-paywall__card--subperiod" id="impressoFdsSubPeriod_val"></div>
+                <div class="article-paywall__card--subperiod impressoFdsSubPeriod_val"></div>
                 <div style="display: flex; flex-direction: column; width: 100%;">
                   <button class="article-paywall-btn--assine">Assine Agora</button>
                 <input id="collapsible-0-1-{{blaize.customData.collapsible_id}}" class="article-paywall__toggle"
@@ -645,12 +644,12 @@
                 </label>
                 <div class="article-paywall__collapsible-content">
                     <div class="article-paywall__card--more-info__divider"></div>
-					<div class="article-paywall__card--more-info__price" id="card3-more-info-price"></div>
-                    <div class="article-paywall__card--more-info__previous-offer" id="card3-previous-offer"></div>
+					          <div class="article-paywall__card--more-info__price card3-more-info-price"></div>
+                    <div class="article-paywall__card--more-info__previous-offer card3-previous-offer"></div>
                     <ul class="article-paywall__card--more-info__list">
-                        <li class="article-paywall__card--more-info__list-item" id="card3-more-info-list1-item"></li>
-                        <li class="article-paywall__card--more-info__list-item zephr-item2" id="card3-more-info-list2-item"></li>
-                        <li class="article-paywall__card--more-info__list-item zephr-item2" id="card3-more-info-list3-item"></li>
+                        <li class="article-paywall__card--more-info__list-item card3-more-info-list1-item"></li>
+                        <li class="article-paywall__card--more-info__list-item zephr-item2 card3-more-info-list2-item"></li>
+                        <li class="article-paywall__card--more-info__list-item zephr-item2 card3-more-info-list3-item"></li>
                     </ul>
                 </div>
               </div>
@@ -659,13 +658,13 @@
 
           <a id="{{event-ga-card3}}" class="paywall__card-link_two" style="color: inherit; text-decoration: none;" target="_blank" aria-label="{{title-card1-tab1}}">
             <div class="article-paywall__card selectedOffer offer-content-wrapper" id="card-0-0">
-              <div class="article-paywall__card-percent" id="paywall__card-percent_impresso_two"></div>
-                <div class="article-paywall__card--title" id="impressoTdsCardTitle_val"></div>
-                <div class="article-paywall__card--sub-title" id="impressoTdsCardSubTitle_val"></div>                
-                <div class="article-paywall__card--price" id="{{event-ga-card1}}">
-                  <div class="article-paywall__card--price-value"><span style="font-size: 15px; color: #69a6ff; font-weight: 400;">Por</span> <span id="impressoTdsCardPrice_val"></span><span style="font-size: 15px; color: #69a6ff; font-weight: 400;"> / mês</span></div>
+              <div class="article-paywall__card-percent paywall__card-percent_impresso_two"></div>
+                <div class="article-paywall__card--title impressoTdsCardTitle_val"></div>
+                <div class="article-paywall__card--sub-title impressoTdsCardSubTitle_val"></div>                
+                <div class="article-paywall__card--price {{event-ga-card1}}">
+                  <div class="article-paywall__card--price-value"><span style="font-size: 15px; color: #69a6ff; font-weight: 400;">Por</span> <span class="impressoTdsCardPrice_val"></span><span style="font-size: 15px; color: #69a6ff; font-weight: 400;" class="card4-price-period"></span></div>
                 </div>
-                <div class="article-paywall__card--subperiod" id="impressoTdsSubPeriod_val"></div>
+                <div class="article-paywall__card--subperiod impressoTdsSubPeriod_val"></div>
                 <div style="display: flex; flex-direction: column; width: 100%;">
                   <button class="article-paywall-btn--assine">Assine Agora</button>
                   <input id="collapsible-1-1-{{blaize.customData.collapsible_id}}" class="article-paywall__toggle"
@@ -675,12 +674,12 @@
                   </label>
                   <div class="article-paywall__collapsible-content">
                     <div class="article-paywall__card--more-info__divider"></div>
-                    <div class="article-paywall__card--more-info__price" id="card4-more-info-price"></div>
-                    <div class="article-paywall__card--more-info__previous-offer" id="card4-previous-offer"></div>
+                    <div class="article-paywall__card--more-info__price card4-more-info-price"></div>
+                    <div class="article-paywall__card--more-info__previous-offer card4-previous-offer"></div>
                     <ul class="article-paywall__card--more-info__list">
-                        <li class="article-paywall__card--more-info__list-item" id="card4-more-info-list1-item"></li>
-                        <li class="article-paywall__card--more-info__list-item zephr-item2" id="card4-more-info-list2-item"></li>
-                        <li class="article-paywall__card--more-info__list-item zephr-item2" id="card4-more-info-list3-item"></li>
+                        <li class="article-paywall__card--more-info__list-item card4-more-info-list1-item"></li>
+                        <li class="article-paywall__card--more-info__list-item zephr-item2 card4-more-info-list2-item"></li>
+                        <li class="article-paywall__card--more-info__list-item zephr-item2 card4-more-info-list3-item"></li>
                     </ul>
                 </div>
               </div>
@@ -766,69 +765,107 @@ if (window.dataLayerEstadao) {
         var elementosTeste = document.getElementsByClassName('zephr-item2');
     };
 
-    var impressoDigitalArr = {
-      btn_digital: document.getElementById("article-paywall__card-selector--digital-{{blaize.customData.collapsible_id}}"),
-      btn_impresso:  document.getElementById("article-paywall__card-selector--impresso-{{blaize.customData.collapsible_id}}"),
-      section_offer_selected:  document.querySelector(".article__paywall__bg-wrapper.selectedOffers"),
-      section_offer:  document.querySelector(".article__paywall__bg-wrapper:not(.selectedOffers)")
-    }
-
-    impressoDigitalArr.btn_digital.addEventListener('click', (e)=>{
-      impressoDigitalArr.btn_digital.classList.add("selectedType")
-      impressoDigitalArr.btn_impresso.classList.remove("selectedType")
-      impressoDigitalArr.section_offer_selected.classList.add("selectedOffers")
-      impressoDigitalArr.section_offer.classList.remove("selectedOffers")    
-    });
-
-    impressoDigitalArr.btn_impresso.addEventListener('click', (e)=>{
-      impressoDigitalArr.btn_digital.classList.remove("selectedType")
-      impressoDigitalArr.btn_impresso.classList.add("selectedType")
-      impressoDigitalArr.section_offer.classList.add("selectedOffers")
-      impressoDigitalArr.section_offer_selected.classList.remove("selectedOffers")
-    });
-
-  var methodsFunc = {
-    setValuesCards: function (data, cards){
-      cards.cardLink.href = data.cardLink_val
-      cards.cardPercent.innerHTML = data.cardPercent_val
-      cards.cardTitle.innerHTML = data.cardTitle_val
-      cards.cardSubTitle.innerHTML =data.cardSubTitle_val
-      cards.cardPrice.innerHTML = data.cardPrice_val
-      cards.subPeriod.innerHTML = data.subPeriod_val
-      cards.cardMoreInfo_Price.innerHTML = data.cardMoreInfo_Price_val
-      cards.cardMoreInfo_previous.innerHTML = data.cardMoreInfo_previous_val
-      cards.cardMoreInfo_item1.innerHTML = data.cardMoreInfo_item1_val
-      cards.cardMoreInfo_item2.innerHTML = data.cardMoreInfo_item2_val
-      cards.cardMoreInfo_item3.innerHTML = data.cardMoreInfo_item3_val
-    },
-    changeValueCards: function (listPlans, card, valoresMensal, valoresAnual){
-      if(!listPlans)
-        return
-      
-      listPlans.addEventListener("click", (e)=>{
-        e.preventDefault();
-        if(listPlans.value === "2"){
-          this.setValuesCards(valoresAnual, card)
-          return
+  var paywall__card_selector = document.getElementsByClassName("article-paywall__card-selector")
+  var article_paywall__card_container = document.getElementsByClassName("article-paywall__card-container")
+  
+  var elementsChildrenLoop = function(elements, className){
+    for(itens of elements){
+      if(itens.classList != undefined){
+        if(!itens.classList.contains(className)){
+          itens.classList.add(className)
+        } else{
+          itens.classList.remove(className)
         }
-        this.setValuesCards(valoresMensal, card)
-      });
+      }
     }
   }
 
+  var sectionOffersChange = function(selector){
+    for(item of article_paywall__card_container){
+      if(selector.getAttribute("data-selector") === item.getAttribute("data-selector")){
+        elementsChildrenLoop(item.childNodes, "selectedOffers")
+      }
+    }
+  }
+  
+  var elementsChange = function(elementsArr){
+    for(var item of elementsArr){
+      item.addEventListener('click', (e)=>{
+        if(!e.target.classList.contains("selectedType") && e.target.classList.contains("paywall__card-selector--digital")){
+          elementsChildrenLoop(e.target.parentElement.children, "selectedType");
+          sectionOffersChange(e.target.parentElement);
+        }
+        if(!e.target.classList.contains("selectedType") && e.target.classList.contains("paywall__card-selector--impresso")){
+          elementsChildrenLoop(e.target.parentElement.children, "selectedType");
+          sectionOffersChange(e.target.parentElement);
+        }
+      })
+    }
+  }
+
+  elementsChange(paywall__card_selector);
+
+  var getElementsLoop = function(element, value, isLink = false){
+    if(!isLink){
+      for(item of element){
+        item.innerHTML = value
+      }
+    }
+
+    for(item of element){
+      item.href = value
+    }
+
+  }
+
+  var setValuesCards = function (data, cards){
+
+    getElementsLoop(cards.cardLink, data.cardLink_val, true)
+    getElementsLoop(cards.cardPercent, data.cardPercent_val)
+    getElementsLoop(cards.cardTitle, data.cardTitle_val)
+    getElementsLoop(cards.cardSubTitle, data.cardSubTitle_val)
+    getElementsLoop(cards.cardPrice, data.cardPrice_val)
+    getElementsLoop(cards.subPeriod, data.subPeriod_val)
+    getElementsLoop(cards.cardMoreInfo_Price, data.cardMoreInfo_Price_val)
+    getElementsLoop(cards.cardMoreInfo_previous, data.cardMoreInfo_previous_val)
+    getElementsLoop(cards.cardMoreInfo_item1, data.cardMoreInfo_item1_val)
+    getElementsLoop(cards.cardMoreInfo_item2, data.cardMoreInfo_item2_val)
+    getElementsLoop(cards.cardMoreInfo_item3, data.cardMoreInfo_item3_val)
+    getElementsLoop(cards.cardPeriod, data.cardPeriod_val)
+
+  }
+  
+  var changeValueCards = function (listPlans, card, valoresMensal, valoresAnual){
+    if(!listPlans)
+      return
+
+
+    for(item of listPlans){
+      item.addEventListener("click", (e)=>{
+        e.preventDefault();
+        if(e.target.value === "2"){
+          setValuesCards(valoresAnual, card)
+          return
+        }
+        setValuesCards(valoresMensal, card)
+      });
+    }
+  }
+  
   var digitalCards = {
     cardOne: {
-      cardLink: document.getElementById("{{event-ga-card1}}"),
-      cardPercent: document.getElementById("paywall__card-percent_digital_one"),
-      cardTitle: document.getElementById("digitalCompletaCardTitle_val"),
-      cardSubTitle: document.getElementById("digitalCompletaCardSubTitle_val"),
-      cardPrice: document.getElementById("digitalCompletaCardPrice_val"),
-      subPeriod: document.getElementById("digitalCompletaSubPeriod_val"),
-      cardMoreInfo_Price: document.getElementById("card1-more-info-price"),
-      cardMoreInfo_item1: document.getElementById("card1-more-info-list1-item"),
-      cardMoreInfo_item2: document.getElementById("card1-more-info-list2-item"),
-      cardMoreInfo_item3: document.getElementById("card1-more-info-list3-item"),
-      cardMoreInfo_previous: document.getElementById("card1-previous-offer"),
+      cardLink: document.getElementsByClassName("{{event-ga-card1}}"),
+      cardPercent: document.getElementsByClassName("paywall__card-percent_digital_one"),
+      cardTitle: document.getElementsByClassName("digitalCompletaCardTitle_val"),
+      cardSubTitle: document.getElementsByClassName("digitalCompletaCardSubTitle_val"),
+      cardPrice: document.getElementsByClassName("digitalCompletaCardPrice_val"),
+      subPeriod: document.getElementsByClassName("digitalCompletaSubPeriod_val"),
+      cardMoreInfo_Price: document.getElementsByClassName("card1-more-info-price"),
+      cardMoreInfo_item1: document.getElementsByClassName("card1-more-info-list1-item"),
+      cardMoreInfo_item2: document.getElementsByClassName("card1-more-info-list2-item"),
+      cardMoreInfo_item3: document.getElementsByClassName("card1-more-info-list3-item"),
+      cardMoreInfo_previous: document.getElementsByClassName("card1-previous-offer"),
+      cardPeriod: document.getElementsByClassName("card1-price-period"),
       values: {
         mensal:{
           cardLink_val: '{{card1-tab1-link}}?canal=PAY&referrer_url={{blaize.customData.referrer_url}}&paywall_dinamico=paywall_zephr_{{cluster}}{{variante_teste-ab}}',
@@ -841,7 +878,8 @@ if (window.dataLayerEstadao) {
           cardMoreInfo_previous_val: '{{card1-tab1-previous-offer}}',
           cardMoreInfo_item1_val: '{{card1-tab1-more-info-list1-item}}',
           cardMoreInfo_item2_val: '{{card1-tab1-more-info-list2-item}}',
-          cardMoreInfo_item3_val: '{{card1-tab1-more-info-list3-item}}'
+          cardMoreInfo_item3_val: '{{card1-tab1-more-info-list3-item}}',
+          cardPeriod_val: '{{card1-tab1-price-period}}'
         },
         anual: {
 		      cardLink_val: '{{card1-tab2-link}}?canal=PAY&referrer_url={{blaize.customData.referrer_url}}&paywall_dinamico=paywall_zephr_{{cluster}}{{variante_teste-ab}}',
@@ -854,22 +892,24 @@ if (window.dataLayerEstadao) {
           cardMoreInfo_previous_val: '{{card1-tab2-previous-offer}}',
           cardMoreInfo_item1_val: '{{card1-tab2-more-info-list1-item}}',
           cardMoreInfo_item2_val: '{{card1-tab2-more-info-list2-item}}',
-          cardMoreInfo_item3_val: '{{card1-tab2-more-info-list3-item}}'
+          cardMoreInfo_item3_val: '{{card1-tab2-more-info-list3-item}}',
+          cardPeriod_val: '{{card1-tab2-price-period}}'
         }
       }
     },
     cardTwo: {
-      cardLink: document.getElementById("{{event-ga-card2}}"),
-      cardPercent: document.getElementById("paywall__card-percent_digital_two"),
-      cardTitle: document.getElementById("digitalBasicaCardTitle_val"),
-      cardSubTitle: document.getElementById("digitalBasicaCardSubTitle_val"),
-      cardPrice: document.getElementById("digitalBasicaCardPrice_val"),
-      subPeriod: document.getElementById("digitalBasicaSubPeriod_val"),
-      cardMoreInfo_Price: document.getElementById("card2-more-info-price"),
-      cardMoreInfo_item1: document.getElementById("card2-more-info-list1-item"),
-      cardMoreInfo_item2: document.getElementById("card2-more-info-list2-item"),
-      cardMoreInfo_item3: document.getElementById("card2-more-info-list3-item"),
-      cardMoreInfo_previous: document.getElementById("card2-previous-offer"),
+      cardLink: document.getElementsByClassName("{{event-ga-card2}}"),
+      cardPercent: document.getElementsByClassName("paywall__card-percent_digital_two"),
+      cardTitle: document.getElementsByClassName("digitalBasicaCardTitle_val"),
+      cardSubTitle: document.getElementsByClassName("digitalBasicaCardSubTitle_val"),
+      cardPrice: document.getElementsByClassName("digitalBasicaCardPrice_val"),
+      subPeriod: document.getElementsByClassName("digitalBasicaSubPeriod_val"),
+      cardMoreInfo_Price: document.getElementsByClassName("card2-more-info-price"),
+      cardMoreInfo_item1: document.getElementsByClassName("card2-more-info-list1-item"),
+      cardMoreInfo_item2: document.getElementsByClassName("card2-more-info-list2-item"),
+      cardMoreInfo_item3: document.getElementsByClassName("card2-more-info-list3-item"),
+      cardMoreInfo_previous: document.getElementsByClassName("card2-previous-offer"),
+      cardPeriod: document.getElementsByClassName("card2-price-period"),
       values: {
         mensal:{
 		      cardLink_val: '{{card1-tab3-link}}?canal=PAY&referrer_url={{blaize.customData.referrer_url}}&paywall_dinamico=paywall_zephr_{{cluster}}{{variante_teste-ab}}',
@@ -882,7 +922,8 @@ if (window.dataLayerEstadao) {
           cardMoreInfo_previous_val: '{{card1-tab3-previous-offer}}',
           cardMoreInfo_item1_val: '{{card1-tab3-more-info-list1-item}}',
           cardMoreInfo_item2_val: '{{card1-tab3-more-info-list2-item}}',
-          cardMoreInfo_item3_val: '{{card1-tab3-more-info-list3-item}}'
+          cardMoreInfo_item3_val: '{{card1-tab3-more-info-list3-item}}',
+          cardPeriod_val: '{{card1-tab3-price-period}}'
         },
         anual: {
 		      cardLink_val: '{{card1-tab4-link}}?canal=PAY&referrer_url={{blaize.customData.referrer_url}}&paywall_dinamico=paywall_zephr_{{cluster}}{{variante_teste-ab}}',
@@ -895,7 +936,8 @@ if (window.dataLayerEstadao) {
           cardMoreInfo_previous_val: '{{card1-tab4-previous-offer}}',
           cardMoreInfo_item1_val: '{{card1-tab4-more-info-list1-item}}',
           cardMoreInfo_item2_val: '{{card1-tab4-more-info-list2-item}}',
-          cardMoreInfo_item3_val: '{{card1-tab4-more-info-list3-item}}'
+          cardMoreInfo_item3_val: '{{card1-tab4-more-info-list3-item}}',
+          cardPeriod_val: '{{card1-tab4-price-period}}'
         }
       }
     }
@@ -903,17 +945,18 @@ if (window.dataLayerEstadao) {
 
   var impressoCards = {
     cardOne: {
-      cardLink: document.querySelector(".paywall__card-link_one"),
-      cardPercent: document.getElementById("paywall__card-percent_impresso_one"),
-      cardTitle: document.getElementById("impressoFdsCardTitle_val"),
-      cardSubTitle: document.getElementById("impressoFdsCardSubTitle_val"),
-      cardPrice: document.getElementById("impressoFdsCardPrice_val"),
-      subPeriod: document.getElementById("impressoFdsSubPeriod_val"),
-      cardMoreInfo_Price: document.getElementById("card3-more-info-price"),
-      cardMoreInfo_item1: document.getElementById("card3-more-info-list1-item"),
-      cardMoreInfo_item2: document.getElementById("card3-more-info-list2-item"),
-      cardMoreInfo_item3: document.getElementById("card3-more-info-list3-item"),
-      cardMoreInfo_previous: document.getElementById("card3-previous-offer"),
+      cardLink: document.getElementsByClassName("paywall__card-link_one"),
+      cardPercent: document.getElementsByClassName("paywall__card-percent_impresso_one"),
+      cardTitle: document.getElementsByClassName("impressoFdsCardTitle_val"),
+      cardSubTitle: document.getElementsByClassName("impressoFdsCardSubTitle_val"),
+      cardPrice: document.getElementsByClassName("impressoFdsCardPrice_val"),
+      subPeriod: document.getElementsByClassName("impressoFdsSubPeriod_val"),
+      cardMoreInfo_Price: document.getElementsByClassName("card3-more-info-price"),
+      cardMoreInfo_item1: document.getElementsByClassName("card3-more-info-list1-item"),
+      cardMoreInfo_item2: document.getElementsByClassName("card3-more-info-list2-item"),
+      cardMoreInfo_item3: document.getElementsByClassName("card3-more-info-list3-item"),
+      cardMoreInfo_previous: document.getElementsByClassName("card3-previous-offer"),
+      cardPeriod: document.getElementsByClassName("card3-price-period"),
       values: {
         mensal:{
 		      cardLink_val: '{{card2-tab1-link}}?canal=PAY&referrer_url={{blaize.customData.referrer_url}}&paywall_dinamico=paywall_zephr_{{cluster}}{{variante_teste-ab}}',
@@ -926,7 +969,8 @@ if (window.dataLayerEstadao) {
           cardMoreInfo_previous_val: '{{card2-tab1-previous-offer}}',
           cardMoreInfo_item1_val: '{{card2-tab1-more-info-list1-item}}',
           cardMoreInfo_item2_val: '{{card2-tab1-more-info-list2-item}}',
-          cardMoreInfo_item3_val: '{{card2-tab1-more-info-list3-item}}'
+          cardMoreInfo_item3_val: '{{card2-tab1-more-info-list3-item}}',
+          cardPeriod_val: '{{card2-tab1-price-period}}'
         },
         anual: {
 		      cardLink_val: '{{card2-tab1-link}}?canal=PAY&referrer_url={{blaize.customData.referrer_url}}&paywall_dinamico=paywall_zephr_{{cluster}}{{variante_teste-ab}}',
@@ -939,22 +983,24 @@ if (window.dataLayerEstadao) {
           cardMoreInfo_previous_val: '{{card2-tab1-previous-offer}}',
           cardMoreInfo_item1_val: '{{card2-tab1-more-info-list1-item}}',
           cardMoreInfo_item2_val: '{{card2-tab1-more-info-list2-item}}',
-          cardMoreInfo_item3_val: '{{card2-tab1-more-info-list3-item}}'
+          cardMoreInfo_item3_val: '{{card2-tab1-more-info-list3-item}}',
+          cardPeriod_val: '{{card2-tab1-price-period}}'
         }
       }
     },
     cardTwo: {
-      cardLink: document.querySelector(".paywall__card-link_two"),
-      cardPercent: document.getElementById("paywall__card-percent_impresso_two"),
-      cardTitle: document.getElementById("impressoTdsCardTitle_val"),
-      cardSubTitle: document.getElementById("impressoTdsCardSubTitle_val"),
-      cardPrice: document.getElementById("impressoTdsCardPrice_val"),
-      subPeriod: document.getElementById("impressoTdsSubPeriod_val"),
-      cardMoreInfo_Price: document.getElementById("card4-more-info-price"),
-      cardMoreInfo_item1: document.getElementById("card4-more-info-list1-item"),
-      cardMoreInfo_item2: document.getElementById("card4-more-info-list2-item"),
-      cardMoreInfo_item3: document.getElementById("card4-more-info-list3-item"),
-      cardMoreInfo_previous: document.getElementById("card4-previous-offer"),
+      cardLink: document.getElementsByClassName("paywall__card-link_two"),
+      cardPercent: document.getElementsByClassName("paywall__card-percent_impresso_two"),
+      cardTitle: document.getElementsByClassName("impressoTdsCardTitle_val"),
+      cardSubTitle: document.getElementsByClassName("impressoTdsCardSubTitle_val"),
+      cardPrice: document.getElementsByClassName("impressoTdsCardPrice_val"),
+      subPeriod: document.getElementsByClassName("impressoTdsSubPeriod_val"),
+      cardMoreInfo_Price: document.getElementsByClassName("card4-more-info-price"),
+      cardMoreInfo_item1: document.getElementsByClassName("card4-more-info-list1-item"),
+      cardMoreInfo_item2: document.getElementsByClassName("card4-more-info-list2-item"),
+      cardMoreInfo_item3: document.getElementsByClassName("card4-more-info-list3-item"),
+      cardMoreInfo_previous: document.getElementsByClassName("card4-previous-offer"),
+      cardPeriod: document.getElementsByClassName("card4-price-period"),
       values: {
         mensal:{
 		      cardLink_val: '{{card2-tab2-link}}?canal=PAY&referrer_url={{blaize.customData.referrer_url}}&paywall_dinamico=paywall_zephr_{{cluster}}{{variante_teste-ab}}',
@@ -967,7 +1013,8 @@ if (window.dataLayerEstadao) {
           cardMoreInfo_previous_val: '{{card2-tab2-previous-offer}}',
           cardMoreInfo_item1_val: '{{card2-tab2-more-info-list1-item}}',
           cardMoreInfo_item2_val: '{{card2-tab2-more-info-list2-item}}',
-          cardMoreInfo_item3_val: '{{card2-tab2-more-info-list3-item}}'
+          cardMoreInfo_item3_val: '{{card2-tab2-more-info-list3-item}}',
+          cardPeriod_val: '{{card2-tab2-price-period}}'
         },
         anual:{
 		      cardLink_val: '{{card2-tab2-link}}?canal=PAY&referrer_url={{blaize.customData.referrer_url}}&paywall_dinamico=paywall_zephr_{{cluster}}{{variante_teste-ab}}',
@@ -975,7 +1022,8 @@ if (window.dataLayerEstadao) {
           cardTitle_val:'{{card2-tab2-title}}',
           cardSubTitle_val:'{{card2-tab2-title-plus}}',
           cardPrice_val:'{{card2-tab2-price}}',
-          subPeriod_val:'{{card2-tab2-subperiod}}'
+          subPeriod_val:'{{card2-tab2-subperiod}}',
+          cardPeriod_val: '{{card2-tab2-price-period}}'
         }
       }
     }
@@ -983,20 +1031,20 @@ if (window.dataLayerEstadao) {
 
   var methodsFuncCards = {
     updateCardsDigitalCompleta: function (){
-      methodsFunc.setValuesCards(digitalCards.cardOne.values.mensal, digitalCards.cardOne);
-      methodsFunc.changeValueCards(document.getElementById("digitalCompletaListPlans"), digitalCards.cardOne, digitalCards.cardOne.values.mensal, digitalCards.cardOne.values.anual);
+      setValuesCards(digitalCards.cardOne.values.mensal, digitalCards.cardOne);
+      changeValueCards(document.getElementsByClassName("digitalCompletaListPlans"), digitalCards.cardOne, digitalCards.cardOne.values.mensal, digitalCards.cardOne.values.anual);
     },
     updateCardsDigitalBasica: function (){
-      methodsFunc.setValuesCards(digitalCards.cardTwo.values.mensal, digitalCards.cardTwo);
-      methodsFunc.changeValueCards(document.getElementById("digitalBasicaListPlans"), digitalCards.cardTwo, digitalCards.cardTwo.values.mensal, digitalCards.cardTwo.values.anual);
+      setValuesCards(digitalCards.cardTwo.values.mensal, digitalCards.cardTwo);
+      changeValueCards(document.getElementsByClassName("digitalBasicaListPlans"), digitalCards.cardTwo, digitalCards.cardTwo.values.mensal, digitalCards.cardTwo.values.anual);
     },
     updateCardsImpressoFds: function (){
-      methodsFunc.setValuesCards(impressoCards.cardOne.values.mensal, impressoCards.cardOne);
-      methodsFunc.changeValueCards(document.getElementById("impressoFdsListPlans"), impressoCards.cardOne, impressoCards.cardOne.values.mensal, impressoCards.cardOne.values.anual);
+      setValuesCards(impressoCards.cardOne.values.mensal, impressoCards.cardOne);
+      changeValueCards(document.getElementsByClassName("impressoFdsListPlans"), impressoCards.cardOne, impressoCards.cardOne.values.mensal, impressoCards.cardOne.values.anual);
     },
     updateCardsImpressoTds: function (){
-      methodsFunc.setValuesCards(impressoCards.cardTwo.values.mensal, impressoCards.cardTwo);
-      methodsFunc.changeValueCards(document.getElementById("impressoTdsListPlans"), impressoCards.cardTwo, impressoCards.cardTwo.values.mensal, impressoCards.cardTwo.values.anual);
+      setValuesCards(impressoCards.cardTwo.values.mensal, impressoCards.cardTwo);
+      changeValueCards(document.getElementsByClassName("impressoTdsListPlans"), impressoCards.cardTwo, impressoCards.cardTwo.values.mensal, impressoCards.cardTwo.values.anual);
     }
   }
 
