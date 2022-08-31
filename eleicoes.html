@@ -534,7 +534,7 @@
     </div>
 
     <div class="article-paywall__top-text__login">
-      Já é assinante Estadão? <a href="https://acesso.estadao.com.br/login/">Entrar</a>
+      Já é assinante Estadão? <a href="https://acesso.estadao.com.br/login/?r={{blaize.customData.referrer_url}}">Entrar</a>
     </div>
 
     <div class="article-paywall__divider-text">
@@ -843,6 +843,10 @@ if (window.dataLayerEstadao) {
     for(item of listPlans){
       item.addEventListener("click", (e)=>{
         e.preventDefault();
+
+        console.log(e.pointerType);
+        console.log(e.target.value);
+
         if(e.target.value === "2"){
           setValuesCards(valoresAnual, card)
           return
