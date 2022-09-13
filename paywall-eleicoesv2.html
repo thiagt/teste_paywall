@@ -1,0 +1,875 @@
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W9P88XF');</script>
+  <!-- End Google Tag Manager -->
+  
+  <style>
+
+.article-paywall__top-text {
+      font-size: 15px;
+      font-weight: normal;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: left;
+      background-image: url(https://assine.estadao.com.br/mkt/img-paywall-eleicoes-2022/bg-br.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 100%;
+      height: 100px;
+      color: #ffffff;
+      margin: 0 0 10px 0;
+    }
+
+  .article-paywall__top-subtitle{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-paywall__top-text__logo-eleicoes2022__text{
+    word-spacing: 5px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .article-paywall__top-text__login{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #2575e8;
+    color: #ffffff;
+    margin: 15px;
+  }
+
+  .article-paywall__top-text__login a{
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .article-paywall__top-subtitle {
+    margin-left: 16px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+    .article-paywall__wrapper {
+      display: contents;
+    }
+    .article-paywall {
+      clear: both;
+      color: #5d5d5d;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      align-items: center;
+      text-align: center;
+      font-family: "Lato", "LatoRegular", "Lato-Regular", "Georgia";
+      max-width: 60vw;
+      margin: auto;
+      margin-bottom: 48px;
+    }
+  
+    .article-paywall, .article-paywall * {
+      box-sizing: border-box;
+    }
+  
+    .article-paywall__top-text {
+      margin-bottom: 16px;
+      font-size: 15px;
+      font-weight: normal;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .article-paywall__top-subtitle {
+      margin-bottom: 16px;
+      font-size: 13px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .article-paywall__link {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #2575e8;
+    }
+  
+    .article-paywall__divider {
+      border-top: 1px solid #cccccc;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: #cccccc;
+    }
+  
+    .article-paywall__divider-text {
+      background-color: white;
+      top: -10px;
+      width: 40px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .article-paywall__title {
+      font-size: 15px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      text-align: center;
+    }
+  
+    .article-paywall__subtitle {
+      flex: 1;
+      line-height: 1.8;
+      display: flex;
+      align-items: flex-end;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .article-paywall__subtitle--small {
+      font-size: 13px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .article-paywall__card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0 8px;
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+    }
+  
+    .article-paywall__card_wrapper2 {
+      display: flex;
+      flex-flow: column;
+      margin-top: 40px;
+    }
+  
+    .article-paywall__card-tab-wrapper {
+      margin: 0 8px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      display: flex;
+      max-width: 180px;
+    }
+  
+    .article-paywall-tab {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 50%;
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: bold;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background-color: #2575e8;
+      letter-spacing: 1px;
+      flex-flow: column;
+      min-height: 35px;
+      border-top: solid 1px #d6d6d6;
+      border-right: solid 1px #d6d6d6;
+      border-left: solid 1px #d6d6d6;
+      border-bottom: none;
+      margin-right: 10px
+    }
+  
+    .article-paywall-tab p {
+      margin: 0;
+      font-size: 9px;
+    }
+  
+    .article-paywall-tab.selectedOffer {
+      color: #2575e8;      
+      background-color: #ffffff;
+      box-shadow: 2px -2px 3px 0 rgba(57, 57, 57, 10%), -3px -2px 3px 0 rgb(57 57 57 / 10%);
+      border-top: solid 1px #d6d6d6;
+      border-right: solid 1px #d6d6d6;
+      border-left: solid 1px #d6d6d6;
+      border-bottom: none;
+      z-index: 1;
+    }
+  
+    .article__paywall__bg-wrapper {
+      border-radius: 0 0 15px 15px;
+      margin: 0 8px;
+      max-width: 284px;
+    }
+  
+    .article__paywall__bg-wrapper.tab-0 {
+      background-color: #ffffff;
+    }
+  
+    .article__paywall__bg-wrapper.tab-1 {
+      background-color: #2575e8;
+      border-radius: 0 20px 20px 20px;
+    }
+  
+    .article-paywall__card {
+      flex: 1;
+      min-width: 265px;
+      max-width: 284px;
+      display: none;
+      flex-flow: column;
+      align-items: center;
+      padding: 12px 16px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      color: #2575e8;
+      background-color: #ffffff;
+      border-top: solid 1px #d6d6d6;
+      border-bottom: solid 1px #d6d6d6;
+      justify-content: space-between;
+    }
+  
+    .article-paywall__card.selectedOffer {
+      display: flex;
+    }
+  
+    .card__off-side{
+      border-top: none;
+      border-left: solid 1px #d6d6d6;
+      border-right: solid 1px #d6d6d6;
+      border-bottom: none;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  
+    .article-paywall__card--title {
+      font-size: 15px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+  
+    .article-paywall__card--price {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+  
+    .article-paywall__card--currency {
+      display: flex;
+      align-items: flex-end;
+      font-size: 20;
+      font-weight: normal;
+      margin-right: 8px;
+    }
+  
+    .article-paywall__card--price-value {
+      font-size: 40px;
+    }
+  
+    .article-paywall__card--cents {
+      font-size: 40px;
+      margin-right: 5px;
+    }
+  
+    .article-paywall__card--period {
+      display: flex;
+      align-items: flex-end;
+      font-size: 20;
+      font-weight: normal;
+      margin-right: 8px;
+    }
+  
+    .article-paywall__card--subperiod {
+      color: #94aac7;
+      font-size: 10px;
+      line-height: 18px;
+    }
+  
+    .article-paywall__card--more-info {
+      font-size: 12px;
+      line-height: 18px;
+      cursor: pointer;
+      pointer-events: visible;
+    }
+  
+    .article-paywall__card--more-info__divider {
+      width: 70%;
+      border-top: 1px solid white;
+      height: 7px;
+      margin: 0 auto;
+    }
+  
+    input[type="checkbox"].article-paywall__toggle {
+      display: none;
+    }
+  
+    .article-paywall__collapsible-content {
+      max-height: 0px;
+      overflow: hidden;
+  
+      transition: max-height 0.25s ease-in-out;
+    }
+  
+    .article-paywall__toggle:checked
+      + .article-paywall__card--more-info
+      + .article-paywall__collapsible-content {
+      max-height: 100vh;
+    }
+  
+    .article-paywall__toggle:checked + .article-paywall__card--more-info img {
+      transform: rotate(90deg);
+      display: inline-block;
+    }
+  
+    .article-paywall__card--more-info__price {
+      font-size: 12px;
+      text-align: left;
+      line-height: 1.8;
+    }
+  
+    .article-paywall__card--more-info__previous-offer {
+      font-size: 13px;
+      line-height: 1.6;
+      font-weight: bold;
+      text-align: left;
+    }
+  
+    .article-paywall__card--more-info__list {
+      margin: 0;
+      list-style-type: none;
+      text-align: left;
+      padding-inline: 7px;
+    }
+  
+    .article-paywall__card--more-info__list-item {
+      text-indent: -5px;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+  
+    .article-paywall__card--more-info__list-item:before {
+      content: "-";
+      margin-right: 5px;
+      margin-left: -2px;
+    }
+
+    .article-paywall__button-wrapper{
+      margin-bottom: 10px;
+    }
+  
+    .article-paywall__button--green {
+      background-color: #609616;
+      width: 100%;
+      transition: 0.3s ease all;
+      border-radius: 10px;
+      padding: 10px;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  
+    .article-paywall__button--green:hover {
+      background-color: #6fb15c;
+    }
+  
+    .article-paywall__logo {
+      width: 100%;
+      justify-content: center;
+      display: flex;
+    }
+  
+    .article-paywall__divider--logo {
+      margin-bottom: 16px;
+      display: none;
+      border-bottom: 1px solid #cccccc;
+      width: 100%;
+    }
+  
+    @media (min-width: 640px) {
+      .article-paywall__card-container {
+        flex-flow: row;
+        margin-top: 70px;
+      }
+  
+      .article-paywall__card {
+        min-width: 168px;
+        padding: 12px 15px;
+        height: fit-content
+      }
+  
+      .article-paywall__card_wrapper2 {
+        width: 33%;
+        margin-top: 0;
+      }
+  
+      .article-paywall__card_wrapper2.selected {
+        transform: translateY(-40px);
+      }
+  
+      .article-paywall__card.selected .article-paywall__button--green {
+        width: 48px;
+        height: 48px;
+        margin-top: -12px;
+      }
+  
+      .article-paywall__card--more-info__list-item {
+        text-indent: 0;
+      }
+  
+      .article-paywall__divider--logo {
+        display: initial;
+      }
+  
+      .offer-content-wrapper {
+        pointer-events: none;
+      }
+    }
+  </style>
+  <div class="article-paywall">
+    <div id="softwall" class="article-paywall__wrapper">
+      <div class="article-paywall__top-text">
+        <div class="article-paywall__top-text__logo-eleicoes2022" style="margin-left: 10px">
+          <img width="225" src="https://assine.estadao.com.br/mkt/img-paywall-eleicoes-2022/logo-eleicoes.png" alt="logo eleições 2022" srcset="">
+        </div>
+        <div class="article-paywall__top-subtitle">
+          <div class="article-paywall__top-text__logo-eleicoes2022__text">Assine já e garanta acesso</div>
+          <div class="article-paywall__top-text__logo-eleicoes2022__text">à melhor cobertura das Eleições 2022</div>
+        </div>
+      </div>
+      <div class="article-paywall__top-text__login">
+        Já é assinante Estadão? <a href="https://acesso.estadao.com.br/login/?r={{blaize.customData.referrer_url}}">Entrar</a>
+      </div>  
+      <div class="article-paywall__divider">
+          <div class="article-paywall__divider-text">ou</div>
+      </div>
+
+      <div style="font-size: 1.3rem; font-weight: normal; color: #606060; margin: 0;">Escolha o seu plano e acesse o conteúdo completo do Estadão.</div>
+
+      <div class="article-paywall__card-container">
+        <div class="article-paywall__card_wrapper2">
+          <div class="article-paywall__card-tab-wrapper">
+              <div id="tab-0-0-{{blaize.customData.collapsible_id}}" class="article-paywall-tab dark-blue selectedOffer" onClick="switchTab(0, 0, '{{blaize.customData.collapsible_id}}')">
+                <div>{{title-card-1-tab1}}</div>
+                <p>{{discount-card-1-tab1}}</p>
+              </div>
+              <div id="tab-0-1-{{blaize.customData.collapsible_id}}" class="article-paywall-tab" onClick="switchTab(0, 1, '{{blaize.customData.collapsible_id}}')">
+                <div>{{title-card-1-tab2}}</div>
+                <p>{{discount-card-1-tab2}}</p>
+              </div>
+          </div>
+  
+          <div class="article__paywall__bg-wrapper tab-0">
+            <a id="{{event-ga-card1}}" style="color: inherit; text-decoration: none;" target="_blank"
+              href="{{link-offer-card1-tab1}}?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico={{link-identificador}}{{variante_teste-ab}}" aria-label="{{title-card1-tab1}}">
+              <div class="card__off-side">
+                <div class="article-paywall__card tab-0 selectedOffer offer-content-wrapper" id="card-0-0-{{blaize.customData.collapsible_id}}">
+                  <div class="article-paywall__card--title">{{title-card1-tab1}}</div>
+                    <div class="article-paywall__card--price" id="{{event-ga-card1}}">
+                        <div class="article-paywall__card--currency">R$</div>
+                        <span class="article-paywall__card--price-value">
+                            {{price-card1-tab1}}
+                        </span>
+                        <span class="article-paywall__card--cents">
+                            {{price-cents-card1-tab1}}
+                        </span>
+                        <div class="article-paywall__card--period">/ {{price-period-card1-tab1}}</div>
+                    </div>
+                    <div class="article-paywall__card--subperiod">{{subperiod-card1-tab1}}</div>
+                    <div id="{{event-ga-card1}}" class="article-paywall__button-wrapper" target="_blank">
+                      <div class="article-paywall__button--green" data-testid="paywall-sign-button">Assine Agora</div>
+                    </div>
+                    <div>
+                      <input id="collapsible-0-0-{{blaize.customData.collapsible_id}}" class="article-paywall__toggle"
+                          type="checkbox">
+                      <label for="collapsible-0-0-{{blaize.customData.collapsible_id}}"
+                          class="article-paywall__card--more-info">
+                          <svg style="margin-top: 10px; width: 40px;" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down Circle</title><path d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M352 216l-96 96-96-96"/></svg>
+                      </label>
+                      <div class="article-paywall__collapsible-content">
+                          <div class="article-paywall__card--more-info__divider"></div>
+                          <div class="article-paywall__card--more-info__price">{{more-info-price-card1-tab1}}</div>
+                          <div class="article-paywall__card--more-info__previous-offer">{{previous-offer-card1-tab1}}</div>
+                          <ul class="article-paywall__card--more-info__list">
+                              <li class="article-paywall__card--more-info__list-item">{{more-info-list1-item-card1-tab1}}</li>
+                              <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list2-item-card1-tab1}}</li>
+                              <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list3-item-card1-tab1}}</li>
+                          </ul>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+  
+          <div class="article__paywall__bg-wrapper tab-1">
+            <a id="{{event-ga-card1}}" style="color: inherit; text-decoration: none;" target="_blank"
+            href="{{link-offer-card1-tab2}}?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico={{link-identificador}}{{variante_teste-ab}}" aria-label="{{title-card1-tab2}}">
+              <div class="card__off-side">
+                <div class="article-paywall__card tab-1 offer-content-wrapper" id="card-0-1-{{blaize.customData.collapsible_id}}">
+                  <div class="article-paywall__card--title">{{title-card1-tab2}}</div>
+                    <div class="article-paywall__card--price" id="{{event-ga-card1-tab2}}">
+                        <div class="article-paywall__card--currency">R$</div>
+                        <span class="article-paywall__card--price-value">
+                            {{price-card1-tab2}}
+                        </span>
+                        <span class="article-paywall__card--cents">
+                            {{price-cents-card1-tab2}}
+                        </span>
+                        <div class="article-paywall__card--period">/ {{price-period-card1-tab2}}</div>
+                    </div>
+                    <div class="article-paywall__card--subperiod">{{subperiod-card1-tab2}}</div>
+                    <div id="{{event-ga-card1}}" class="article-paywall__button-wrapper">
+                      <div class="article-paywall__button--green" data-testid="paywall-sign-button">Assine Agora</div>
+                    </div>
+                    <div>
+                      
+                      <input id="collapsible-0-1-{{blaize.customData.collapsible_id}}" class="article-paywall__toggle"
+                          type="checkbox">
+                      <label for="collapsible-0-1-{{blaize.customData.collapsible_id}}"
+                          class="article-paywall__card--more-info">
+                          <svg style="margin-top: 10px; width: 40px;" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down Circle</title><path d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M352 216l-96 96-96-96"/></svg>
+                      </label>
+                      <div class="article-paywall__collapsible-content">
+                          <div class="article-paywall__card--more-info__divider"></div>
+                          <div class="article-paywall__card--more-info__price">{{more-info-price-card1-tab2}}</div>
+                          <div class="article-paywall__card--more-info__previous-offer">{{previous-offer-card1-tab2}}</div>
+                          <ul class="article-paywall__card--more-info__list">
+                              <li class="article-paywall__card--more-info__list-item">{{more-info-list1-item-card1-tab2}}</li>
+                              <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list2-item-card1-tab2}}</li>
+                              <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list3-item-card1-tab2}}</li>
+                          </ul>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+  
+        <div class="article-paywall__card_wrapper2">
+          <div class="article-paywall__card-tab-wrapper">
+              <div id="tab-1-0-{{blaize.customData.collapsible_id}}" class="article-paywall-tab dark-blue selectedOffer" onClick="switchTab(1, 0, '{{blaize.customData.collapsible_id}}')">
+                <div>{{title-card-2-tab1}}</div>
+                <p>{{discount-card-2-tab1}}</p>
+              </div>
+              <div id="tab-1-1-{{blaize.customData.collapsible_id}}" class="article-paywall-tab" onClick="switchTab(1, 1, '{{blaize.customData.collapsible_id}}')">
+                <div>{{title-card-2-tab2}}</div>
+                <p>{{discount-card-2-tab2}}</p>
+              </div>
+          </div>
+  
+          <div class="article__paywall__bg-wrapper tab-0">
+            <a id="{{event-ga-card2}}" style="color: inherit; text-decoration: none;" target="_blank"
+            href="{{link-offer-card2-tab1}}?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico={{link-identificador}}{{variante_teste-ab}}" aria-label="{{title-card2-tab1}}">
+              <div class="card__off-side">
+                <div class="article-paywall__card tab-0 selectedOffer offer-content-wrapper" id="card-1-0-{{blaize.customData.collapsible_id}}">
+                  <div class="article-paywall__card--title">{{title-card2-tab1}}</div>
+                    <div class="article-paywall__card--price" id="{{event-ga-card2}}">
+                        <div class="article-paywall__card--currency">R$</div>
+                        <span class="article-paywall__card--price-value">
+                            {{price-card2-tab1}}
+                        </span>
+                        <span class="article-paywall__card--cents">
+                            {{price-cents-card2-tab1}}
+                        </span>
+                        <div class="article-paywall__card--period">/ {{price-period-card2-tab1}}</div>
+                    </div>
+                    <div class="article-paywall__card--subperiod">{{subperiod-card2-tab1}}</div>
+                    <div id="{{event-ga-card2}}" class="article-paywall__button-wrapper">
+                      <div class="article-paywall__button--green" data-testid="paywall-sign-button">Assine Agora</div>
+                    </div>
+                    <div>
+                      <input id="collapsible-1-0-{{blaize.customData.collapsible_id}}" class="article-paywall__toggle"
+                          type="checkbox">
+                      <label for="collapsible-1-0-{{blaize.customData.collapsible_id}}"
+                          class="article-paywall__card--more-info">
+                          <svg style="margin-top: 10px; width: 40px;" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down Circle</title><path d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M352 216l-96 96-96-96"/></svg>
+                      </label>
+                      <div class="article-paywall__collapsible-content">
+                          <div class="article-paywall__card--more-info__divider"></div>
+                          <div class="article-paywall__card--more-info__price">{{more-info-price-card2-tab1}}</div>
+                          <div class="article-paywall__card--more-info__previous-offer">{{previous-offer-card2-tab1}}</div>
+                          <ul class="article-paywall__card--more-info__list">
+                              <li class="article-paywall__card--more-info__list-item">{{more-info-list1-item-card2-tab1}}</li>
+                              <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list2-item-card2-tab1}}</li>
+                              <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list3-item-card2-tab1}}</li>
+                          </ul>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+  
+          <div class="article__paywall__bg-wrapper tab-1">
+            <a id="{{event-ga-card2}}" style="color: inherit; text-decoration: none;" target="_blank"
+            href="{{link-offer-card2-tab2}}?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico={{link-identificador}}{{variante_teste-ab}}" aria-label="{{title-card2-tab2}}">
+              <div class="card__off-side">
+                <div class="article-paywall__card tab-1 offer-content-wrapper" id="card-1-1-{{blaize.customData.collapsible_id}}">
+                  <div class="article-paywall__card--title">{{title-card2-tab2}}</div>
+                    <div class="article-paywall__card--price" id="{{event-ga-card2}}">
+                        <div class="article-paywall__card--currency">R$</div>
+                        <span class="article-paywall__card--price-value">
+                            {{price-card2-tab2}}
+                        </span>
+                        <span class="article-paywall__card--cents">
+                            {{price-cents-card2-tab2}}
+                        </span>
+                        <div class="article-paywall__card--period">/ {{price-period-card2-tab2}}</div>
+                    </div>
+                    <div class="article-paywall__card--subperiod">{{subperiod-card2-tab2}}</div>
+                    <div id="{{event-ga-card2}}" class="article-paywall__button-wrapper">
+                      <div class="article-paywall__button--green" data-testid="paywall-sign-button">Assine Agora</div>
+                    </div>
+                    <div>
+                      <input id="collapsible-1-1-{{blaize.customData.collapsible_id}}" class="article-paywall__toggle"
+                          type="checkbox">
+                      <label for="collapsible-1-1-{{blaize.customData.collapsible_id}}"
+                          class="article-paywall__card--more-info">
+                          <svg style="margin-top: 10px; width: 40px;" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down Circle</title><path d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M352 216l-96 96-96-96"/></svg>
+                      </label>
+                      <div class="article-paywall__collapsible-content">
+                          <div class="article-paywall__card--more-info__divider"></div>
+                          <div class="article-paywall__card--more-info__price">{{more-info-price-card2-tab2}}</div>
+                          <div class="article-paywall__card--more-info__previous-offer">{{previous-offer-card2-tab2}}</div>
+                          <ul class="article-paywall__card--more-info__list">
+                              <li class="article-paywall__card--more-info__list-item">{{more-info-list1-item-card2-tab2}}</li>
+                              <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list2-item-card2-tab2}}</li>
+                              <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list3-item-card2-tab2}}</li>
+                          </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+  
+        <div class="article-paywall__card_wrapper2">
+          <div class="article-paywall__card-tab-wrapper">
+              <div id="tab-2-0-{{blaize.customData.collapsible_id}}" class="article-paywall-tab dark-blue selectedOffer" onClick="switchTab(2, 0, '{{blaize.customData.collapsible_id}}')">
+                <div>{{title-card-3-tab1}}</div>
+                <p>{{discount-card-3-tab1}}</p>
+              </div>
+              <div id="tab-2-1-{{blaize.customData.collapsible_id}}" class="article-paywall-tab" onClick="switchTab(2, 1, '{{blaize.customData.collapsible_id}}')">
+                <div>{{title-card-3-tab2}}</div>
+                <p>{{discount-card-3-tab2}}</p>
+              </div>
+          </div>
+  
+          <div class="article__paywall__bg-wrapper tab-0">
+            <a id="{{event-ga-card3}}" style="color: inherit; text-decoration: none;" target="_blank"
+            href="{{link-offer-card3-tab1}}?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico={{link-identificador}}{{variante_teste-ab}}" aria-label="{{title-card3-tab1}}">
+              <div class="card__off-side">
+                <div class="article-paywall__card tab-0 selectedOffer offer-content-wrapper" id="card-2-0-{{blaize.customData.collapsible_id}}">
+                  <div class="article-paywall__card--title">{{title-card3-tab1}}</div>
+                    <div class="article-paywall__card--price" id="{{event-ga-card3}}">
+                        <div class="article-paywall__card--currency">R$</div>
+                        <span class="article-paywall__card--price-value">
+                            {{price-card3-tab1}}
+                        </span>
+                        <span class="article-paywall__card--cents">
+                            {{price-cents-card3-tab1}}
+                        </span>
+                        <div class="article-paywall__card--period">/ {{price-period-card3-tab1}}</div>
+                    </div>
+                    <div class="article-paywall__card--subperiod">{{subperiod-card3-tab1}}</div>
+                    <div id="{{event-ga-card3}}" class="article-paywall__button-wrapper">
+                      <div class="article-paywall__button--green" data-testid="paywall-sign-button">Assine Agora</div>
+                    </div>
+                  <div>
+                    <input id="collapsible-2-0-{{blaize.customData.collapsible_id}}" class="article-paywall__toggle"
+                        type="checkbox">
+                    <label for="collapsible-2-0-{{blaize.customData.collapsible_id}}"
+                        class="article-paywall__card--more-info">
+                        <svg style="margin-top: 10px; width: 40px;" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down Circle</title><path d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M352 216l-96 96-96-96"/></svg>
+                    </label>
+                    <div class="article-paywall__collapsible-content">
+                        <div class="article-paywall__card--more-info__divider"></div>
+                        <div class="article-paywall__card--more-info__price">{{more-info-price-card3-tab1}}</div>
+                        <div class="article-paywall__card--more-info__previous-offer">{{previous-offer-card3-tab1}}</div>
+                        <ul class="article-paywall__card--more-info__list">
+                            <li class="article-paywall__card--more-info__list-item">{{more-info-list1-item-card3-tab1}}</li>
+                            <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list2-item-card3-tab1}}</li>
+                            <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list3-item-card3-tab1}}</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+  
+          <div class="article__paywall__bg-wrapper tab-1">
+            <a id="{{event-ga-card3}}" style="color: inherit; text-decoration: none;" target="_blank"
+            href="{{link-offer-card3-tab2}}?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico={{link-identificador}}{{variante_teste-ab}}" aria-label="{{title-card3-tab2}}">
+              <div class="card__off-side">
+                <div class="article-paywall__card tab-1 offer-content-wrapper" id="card-2-1-{{blaize.customData.collapsible_id}}">
+                  <div class="article-paywall__card--title">{{title-card3-tab2}}</div>
+                    <div class="article-paywall__card--price" id="{{event-ga-card3}}">
+                        <div class="article-paywall__card--currency">R$</div>
+                        <span class="article-paywall__card--price-value">
+                            {{price-card3-tab2}}
+                        </span>
+                        <span class="article-paywall__card--cents">
+                            {{price-cents-card3-tab2}}
+                        </span>
+                        <div class="article-paywall__card--period">/ {{price-period-card3-tab2}}</div>
+                    </div>
+                    <div class="article-paywall__card--subperiod">{{subperiod-card3-tab2}}</div>
+                    <div id="{{event-ga-card3}}" class="article-paywall__button-wrapper">
+                      <div class="article-paywall__button--green" data-testid="paywall-sign-button">Assine Agora</div>
+                    </div>
+                  <div>
+                    <input id="collapsible-2-1-{{blaize.customData.collapsible_id}}" class="article-paywall__toggle"
+                        type="checkbox">
+                    <label for="collapsible-2-1-{{blaize.customData.collapsible_id}}"
+                        class="article-paywall__card--more-info">
+                        <svg style="margin-top: 10px; width: 40px;" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down Circle</title><path d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M352 216l-96 96-96-96"/></svg>
+                    </label>
+                    <div class="article-paywall__collapsible-content">
+                        <div class="article-paywall__card--more-info__divider"></div>
+                        <div class="article-paywall__card--more-info__price">{{more-info-price-card3-tab2}}</div>
+                        <div class="article-paywall__card--more-info__previous-offer">{{previous-offer-card3-tab2}}</div>
+                        <ul class="article-paywall__card--more-info__list">
+                            <li class="article-paywall__card--more-info__list-item">{{more-info-list1-item-card3-tab2}}</li>
+                            <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list2-item-card3-tab2}}</li>
+                            <li class="article-paywall__card--more-info__list-item zephr-item2">{{more-info-list3-item-card3-tab2}}</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="article-paywall__divider--logo"></div>
+      <div class="article-paywall__logo">
+          <img src="https://statics.estadao.com.br/s2016/portal/logos/logo-estadao-cavalo.svg" alt="Logo do Estadao"
+              width="158px" height="63px" />
+  
+      </div>
+    </div>
+  </div>
+  <script>
+      var styles = document.getElementsByTagName("style");
+      var lastStyle = styles[styles.length - 1];
+      lastStyle.innerHTML += `{{blaize.customData.pwStyle}}`;
+  
+      var elementosTeste = document.getElementsByClassName('zephr-item2');
+      while (elementosTeste.length > 0) {
+          var divsTeste = Array.prototype.filter.call(elementosTeste, function (elementoTeste) {
+              var isEmpty = elementoTeste.innerHTML === " ";
+              if (isEmpty === true) elementoTeste.parentNode.removeChild(elementoTeste);
+              else elementoTeste.classList.remove('zephr-item2');
+          });
+          var elementosTeste = document.getElementsByClassName('zephr-item2');
+      };
+      window.switchTab = function (card, selectedTab, pwId) {
+          if (pwId == null || pwId == undefined) pwId = "";
+          document.getElementById("card-"+card+"-"+selectedTab+"-"+pwId).classList.add("selectedOffer");
+          let hideCard = 0;
+          if (selectedTab == 0) {
+            hideCard = 1;
+          }
+          document.getElementById("card-"+card+"-"+hideCard+"-"+pwId).classList.remove("selectedOffer");
+  
+          document.getElementById("tab-"+card+"-"+selectedTab+"-"+pwId).classList.add("selectedOffer");
+          let hideTab = 0;
+          if (selectedTab == 0) {
+            hideTab = 1;
+          }
+          document.getElementById("tab-"+card+"-"+hideTab+"-"+pwId).classList.remove("selectedOffer");
+      };
+  
+  let testAb = "{{variante_teste-ab}}";
+  
+  // Events
+  if (window.dataLayerEstadao) {
+    window.dataLayerEstadao.push({
+        event: "genericEvent",
+        genericCategory: "paywall",
+        genericAction: "show",
+        genericLabel: testAb == " " ? "{{cluster}}_visualizado" : "{{cluster}}" + testAb + "_visualizado",
+    });
+  }
+  
+  document.addEventListener("click", function (e) {
+  
+    if (e.target &&
+        e.target.parentElement.id == "{{event-ga-card1}}" ||
+        e.target.id == "{{event-ga-card1}}") {
+        if (window.dataLayerEstadao) {
+          window.dataLayerEstadao.push({
+            event: "genericEvent",
+            genericCategory: "paywall",
+            genericAction: "click",
+            genericLabel: "{{event-ga-card1}}_{{cluster}}" + testAb.trim(),
+          });
+        }
+    }
+  
+    if (e.target &&
+        e.target.parentElement.id == "{{event-ga-card2}}" ||
+        e.target.id == "{{event-ga-card2}}") {
+        if (window.dataLayerEstadao) {
+          window.dataLayerEstadao.push({
+            event: "genericEvent",
+            genericCategory: "paywall",
+            genericAction: "click",
+            genericLabel: "{{event-ga-card2}}_{{cluster}}" + testAb.trim(),
+          });
+        }
+    }
+  
+    if (e.target &&
+        e.target.parentElement.id == "{{event-ga-card3}}" ||
+        e.target.id == "{{event-ga-card3}}") {
+        if (window.dataLayerEstadao) {
+          window.dataLayerEstadao.push({
+            event: "genericEvent",
+            genericCategory: "paywall",
+            genericAction: "click",
+            genericLabel: "{{event-ga-card3}}_{{cluster}}" + testAb.trim(),
+          });
+        }
+    }
+  });
+  
+  </script>
+  
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9P88XF"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
