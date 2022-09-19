@@ -3072,7 +3072,7 @@ body > div > .modal[data-modal="newsletter"] .container > p strong {
     .article__paywall__bg-wrapper {
       border-radius: 0 0 15px 15px;
       margin: 0 8px;
-      max-width: 284px;
+      max-width: 300px;
     }
   
     .article__paywall__bg-wrapper.tab-0 {
@@ -3087,7 +3087,7 @@ body > div > .modal[data-modal="newsletter"] .container > p strong {
     .article-paywall__card {
       flex: 1;
       min-width: 265px;
-      max-width: 284px;
+      max-width: 300px;
       display: none;
       flex-flow: column;
       align-items: center;
@@ -3309,8 +3309,8 @@ body > div > .modal[data-modal="newsletter"] .container > p strong {
       }
   
       .article-paywall__card_wrapper2 {
-        width: 33%;
         margin-top: 0;
+        align-items: start;
       }
   
       .article-paywall__card_wrapper2.selected {
@@ -3351,7 +3351,7 @@ body > div > .modal[data-modal="newsletter"] .container > p strong {
 
                 <div class="inner">
                     <div class="top">
-                        <h1 class="title-h1">Incentive a diversidade de opiniões e especialistas no Estadão.</h1>
+                        <h1 class="title-h1">Assine já e garanta acesso à melhor cobertura das Eleições 2022</h1>
                         <p>Assine um conteúdo que traz análises e opiniões diferentes.</p>
                     </div>
 
@@ -3679,52 +3679,54 @@ body > div > .modal[data-modal="newsletter"] .container > p strong {
         document.getElementById("tab-"+card+"-"+hideTab+"-"+pwId).classList.remove("selectedOffer");
     };
 
+    let testAb = "{{variante_teste-ab}}";
+
 // Events
 if (window.dataLayerEstadao) {
     window.dataLayerEstadao.push({
         event: "genericEvent",
         genericCategory: "hard_paywall",
         genericAction: "show",
-        genericLabel: "visualizado",
+        genericLabel: testAb == " " ? "{{cluster}}_visualizado" : "{{cluster}}" + testAb + "_visualizado",
     });
 }
 
 document.addEventListener("click", function (e) {
     if (e.target &&
-        e.target.parentElement.id == "digital_completa" ||
-        e.target.id == "digital_completa") {
+        e.target.parentElement.id == "{{event-ga-card1}}" ||
+        e.target.id == "{{event-ga-card1}}") {
         if (window.dataLayerEstadao) {
           window.dataLayerEstadao.push({
             event: "genericEvent",
-            genericCategory: "hard_paywall",
+            genericCategory: "paywall",
             genericAction: "click",
-            genericLabel: "digital_completa",
+            genericLabel: "{{event-ga-card1}}_{{cluster}}" + testAb.trim(),
           });
         }
     }
-
+  
     if (e.target &&
-        e.target.parentElement.id == "impresso_digital" ||
-        e.target.id == "impresso_digital") {
+        e.target.parentElement.id == "{{event-ga-card2}}" ||
+        e.target.id == "{{event-ga-card2}}") {
         if (window.dataLayerEstadao) {
           window.dataLayerEstadao.push({
             event: "genericEvent",
-            genericCategory: "hard_paywall",
+            genericCategory: "paywall",
             genericAction: "click",
-            genericLabel: "impresso_digital",
+            genericLabel: "{{event-ga-card2}}_{{cluster}}" + testAb.trim(),
           });
         }
     }
-
+  
     if (e.target &&
-        e.target.parentElement.id == "digital_basica" ||
-        e.target.id == "digital_basica") {
+        e.target.parentElement.id == "{{event-ga-card3}}" ||
+        e.target.id == "{{event-ga-card3}}") {
         if (window.dataLayerEstadao) {
           window.dataLayerEstadao.push({
             event: "genericEvent",
-            genericCategory: "hard_paywall",
+            genericCategory: "paywall",
             genericAction: "click",
-            genericLabel: "digital_basica",
+            genericLabel: "{{event-ga-card3}}_{{cluster}}" + testAb.trim(),
           });
         }
     }
